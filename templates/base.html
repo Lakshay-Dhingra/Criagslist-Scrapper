@@ -1,0 +1,93 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Materialize CSS-->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Material Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- <link rel="stylesheet" href="../static/css/style.css"> -->
+
+    <title>Criagslist Scrapper</title>
+</head>
+<body>
+   <nav class="blue">
+    <div class="container nav-wrapper">
+        <a href="{% url 'home' %}" class="brand-logo">
+        <i class="large material-icons">cloud</i>
+        Criagslist Scrapper</a>
+
+        <a href="#" class="sidenav-trigger" data-target="mobile-nav">
+			<i class="material-icons">menu</i>
+		</a>
+
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+        </ul>
+    </div>
+   </nav>
+   <!-- For Mobile-->
+    <ul class="sidenav" id="mobile-nav">
+	    <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'about' %}">About</a></li>
+    </ul>
+
+
+    <div class="container">
+    <h1>What do you want to search for on Criagslist Scrapper?</h1>
+        <form action="{% url 'new_search' %}" method="get" id = "search_form">
+        <div class="row container" id = "search_box">
+
+            <div class="col s3" id = "search_select"><select name="city" id="city" class="my_select">
+                <option value="delhi" id ="delhi">Delhi</option>
+                <option value="chandigarh" id ="chandigarh">Chandigarh</option>
+                <option value="jaipur" id ="jaipur">Jaipur</option>
+                <option value="ahmedabad" id ="ahmedabad">Ahmedabad</option>
+                <option value="bangalore" id ="bangalore">Bangalore</option>
+                <option value="bhubaneswar" id ="bhubaneswar">Bhubaneswar</option>
+                <option value="chennai" id ="chennai">Chennai</option>
+                <option value="goa" id ="goa">Goa</option>
+                <option value="hyderabad" id ="hyderabad">Hyderabad</option>
+                <option value="indore" id ="indore">Indore</option>
+                <option value="kerala" id ="kerala">Kerela</option>
+                <option value="kolkata" id ="kolkata">Kolkata</option>
+                <option value="lucknow" id ="lucknow">Lucknow</option>
+                <option value="mumbai" id ="mumbai">Mumbai</option>
+                <option value="pune" id ="pune">Pune</option>
+            </select></div>
+
+            <div class="col s8" id = "search_input"><input type="text" name="search" placeholder="Search Here" required></div>
+
+            <div class="col s1 blue" id="search_button"><button type="submit" class="blue"><span class="large material-icons">search</span></button></div>
+        </div>
+        </form>
+        {% block content %}
+
+        {% endblock content %}
+    </div>
+
+    <!-- Java Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <script>    
+        $(document).ready(function(){
+ 		$('.sidenav').sidenav();
+ 	    });
+
+        document.getElementById("{{city}}").selected = true;
+    </script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   
+</body>
+</html>

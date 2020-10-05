@@ -1,0 +1,241 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.brand-logo
+{
+    font-size: 2.2em;
+}
+
+#nav-mobile li a
+{
+    font-size: 1.3em;
+}
+
+
+h1, h2, h3
+{
+    text-align: center;
+}
+
+#search_box
+{
+    border: solid;
+    height: 7.5vh;
+    display: flex;
+    align-items: center;
+    margin: 10vh auto;
+}
+
+#search_box div
+{
+    border-right: solid;
+    height: 7vh;
+    margin: 0;
+    padding: 0;
+}
+
+#search_box select
+{
+    display: block;
+    height: 7vh;
+    box-shadow: none;
+    border:none;
+    font-size: 1.5em;
+    padding: 0vh 1vw;
+    cursor: pointer;
+}
+#search_box select option
+{
+    font-size: 0.9em;
+}
+
+#search_input input
+{
+    display:block;
+    height:7vh;
+    padding: 0vh 1vw;
+    border:none;
+    font-size: 1.5em;
+}
+#search_input input:focus
+{
+    outline: none;
+}
+
+#search_box #search_button
+{
+    border-right: none;
+}
+#search_button button
+{
+    display: block;
+    height:7vh;
+    width:3.8vw;
+    margin:0vh auto;
+    border:none;
+    box-shadow: none;
+    cursor: pointer;
+}
+#search_button span
+{
+    color: white;
+    font-size: 1.8em;
+    font-weight: 600;
+    /* border: solid; */
+}
+
+.card_container
+{
+    margin:5vh auto;
+}
+
+.card
+{
+    margin:2vh 0.5vw;
+    height:57vh;
+}
+
+.card img
+{
+    height:30vh;
+}
+
+.card-content span
+{
+    display:block;
+    height:17vh;
+}
+
+
+.poster i
+{
+    font-size: 8em;
+}
+
+.poster_para
+{
+    font-size: 1.4em;
+}
+
+.about_main
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.about_main h2
+{
+    font-weight: 600;
+}
+
+dl
+{
+    display: flex;
+    font-size: 2em;
+    flex-direction: column;
+    margin-bottom:10vh;
+}
+
+dt
+{
+    font-weight: 600;
+}
+
+dl div
+{
+    padding:2.5vh 0vw;
+}
+
+.about_right
+{
+    font-size: 2em;
+    margin:12vh 0vw;
+    text-align: center;
+    /* border: solid; */
+}
+.about_right img
+{
+    display:block;
+    width:15vw;
+    margin:4vh auto;
+    border:solid;
+    border-radius: 20px;
+}
+
+.aside_main
+{
+    display: flex;
+    flex-direction: column;
+}
+.aside_main div
+{
+    margin:0vh 1vw;
+}
+.aside_main h4
+{
+    font-weight: 600;
+}
+.aside_main p
+{
+    font-size: 0.9em;
+}
+
+@media screen and (max-width: 1400px) {
+    .card img
+    {
+    height:35vh;
+    }
+    .card
+    {
+      height: 70vh;
+    }
+    .card-content span
+    {   
+        display:block;
+        height:23vh;
+    }
+  }
+
+@media screen and (max-width: 1200px) {
+    .card img
+    {
+    height:35vh;
+    }
+    .card
+    {
+      height: 80vh;
+    }
+    .card-content span
+    {   
+        display:block;
+        height:33vh;
+    }
+  }
+
+@media screen and (max-width: 1000px) {
+    .card img
+    {
+    height:35vh;
+    }
+    .card
+    {
+      height: 62vh;
+    }
+    .card-content span
+    {   
+        display:block;
+        height:17vh;
+    }
+
+    .about_right img
+    {
+        display:block;
+        width:30vw;
+        margin:4vh auto;
+        border:solid;
+        border-radius: 20px;
+    }
+  }

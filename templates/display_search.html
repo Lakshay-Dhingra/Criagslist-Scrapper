@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+{% if result_list == None %}
+       <div class="container error_message">
+            <h2>Couldn't connect to criagslist.org to display results...</h2>
+       </div>
+{% elif result_list|length == 0 %}
+<h2 class="search_title">No results found for "{{ search | title }}".</h2>
+{% else %}
+<h2 class="search_title">{{ search | title }}</h2>
+<div class="card_container row">
+    {% for res in result_list %}
+        <div class="col s12 m6 l4">
+          <a href="{{res.link}}">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img src="{{res.image_url}}">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">{{res.title | title}}</span>
+                <footer><div>Posted On: {{res.date_time}}</div></footer>
+              </div>
+            </div>
+          </a>
+        </div>
+    {% endfor %}
+</div>
+{% endif %}
+{% endblock content %}

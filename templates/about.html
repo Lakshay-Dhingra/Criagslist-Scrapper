@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="row about_main">
+    <div class="col s12 l8 about_left">
+        <h2>About Criagslist Web Scrapper</h2>
+        <dl>
+            <div>
+            <dt>Q. Is this website free to use?</dt>
+            <dd>Yes, this website is completely free to use. It is a college project which scrapes data from criagslist.org and displays it on this website.</dd>
+            </div>
+
+            <div>
+            <dt>Q. How it actually works?</dt>
+            <dd>First a user selects the desired city. Then the website makes request to region.criagslist.org with the desired search. For example if Delhi is selected, we will make request to delhi.criagslist.org with the search request and then scrap the important data to present to the user.</dd>
+            </div>
+
+            <div>
+            <dt>Q. Why use this website if actual website is already there?</dt>
+            <dd>It's your choice, both websites are non-profitable. This one uses the original website at its backend. It provides a better UI at the cost of very miniscule increase in response time.</dd>
+            </div>
+        </dl>
+    </div>
+    <aside class="col s12 l4 about_right">
+        <img src="../static/images/Profile_Picture.jpg">
+        <div class="aside_main">
+            <div><h4>Developed By:</h4>
+                <p>- Lakshay Dhingra</p>
+            </div>
+            <div><h4>Email:</h4>
+                <a href = "mailto: abc@example.com"><p>lakshaydhingra32969@gmail.com</p></a>
+            </div>
+            <div><h4>Github Profile:</h4>
+                <a href="https://github.com/Lakshay-Dhingra"><p>https://github.com/Lakshay-Dhingra</p></a>
+            </div>
+        </div>
+    </aside>
+</div>
+{% endblock content %}
