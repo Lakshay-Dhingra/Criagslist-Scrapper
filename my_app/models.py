@@ -1,5 +1,6 @@
 from django.db import models
 
+
 # Create your models here.
 class Search(models.Model):
     search = models.CharField(max_length=500)
@@ -11,3 +12,4 @@ class Search(models.Model):
 
     class Meta:
         verbose_name_plural='Searches'
+
