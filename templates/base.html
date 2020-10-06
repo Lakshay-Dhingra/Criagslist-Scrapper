@@ -22,7 +22,7 @@
    <nav class="blue">
     <div class="container nav-wrapper">
         <a href="{% url 'home' %}" class="brand-logo">
-        <i class="large material-icons">cloud</i>
+        <i class="large material-icons cloud_icon">cloud</i>
         Criagslist Scrapper</a>
 
         <a href="#" class="sidenav-trigger" data-target="mobile-nav">
@@ -37,6 +37,10 @@
    </nav>
    <!-- For Mobile-->
     <ul class="sidenav" id="mobile-nav">
+        <li class="blue mobile_brand_logo"><a href="{% url 'home' %}"><i class="small material-icons cloud_icon">cloud</i>
+            <span>Criagslist Scrapper</span></a>
+            <p>Criagslist Scrapper is a website that allows you to search for classified ads from criagslist.org.</p>
+        </li>
 	    <li><a href="{% url 'home' %}">Home</a></li>
         <li><a href="{% url 'about' %}">About</a></li>
     </ul>
@@ -47,7 +51,7 @@
         <form action="{% url 'new_search' %}" method="get" id = "search_form">
         <div class="row container" id = "search_box">
 
-            <div class="col s3" id = "search_select"><select name="city" id="city" class="my_select">
+            <div class="col s4 m3" id = "search_select"><select name="city" id="city" class="my_select">
                 <option value="delhi" id ="delhi">Delhi</option>
                 <option value="chandigarh" id ="chandigarh">Chandigarh</option>
                 <option value="jaipur" id ="jaipur">Jaipur</option>
@@ -65,9 +69,9 @@
                 <option value="pune" id ="pune">Pune</option>
             </select></div>
 
-            <div class="col s8" id = "search_input"><input type="text" name="search" placeholder="Search Here" required></div>
+            <div class="col s6 m8" id = "search_input"><input type="text" name="search" placeholder="Search Here" required></div>
 
-            <div class="col s1 blue" id="search_button"><button type="submit" class="blue"><span class="large material-icons">search</span></button></div>
+            <div class="col s2 m1 blue" id="search_button"><button type="submit" class="blue"><span class="large material-icons">search</span></button></div>
         </div>
         </form>
         {% block content %}

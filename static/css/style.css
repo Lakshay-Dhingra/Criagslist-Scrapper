@@ -15,10 +15,46 @@
     font-size: 1.3em;
 }
 
+.sidenav .mobile_brand_logo
+{
+    height: 25vh;
+    padding-top: 3vh;
+}
 
-h1, h2, h3
+.sidenav .mobile_brand_logo .cloud_icon
+{
+    color: white;
+}
+.sidenav span
+{
+    color: white;
+    font-size: 1.5em;
+}
+.sidenav p
+{
+    margin-top: 2vh;
+    margin-left: 3vw;
+    color: white;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+h4
 {
     text-align: center;
+    font-size: 1.1em;
+}
+
+h2
+{
+    text-align: center;
+    font-size: 2.5em;
+}
+
+h1
+{
+    text-align: center;
+    font-size: 3.5em;
 }
 
 #search_box
@@ -41,7 +77,7 @@ h1, h2, h3
 #search_box select
 {
     display: block;
-    height: 7vh;
+    height: 6.9vh;
     box-shadow: none;
     border:none;
     font-size: 1.5em;
@@ -51,6 +87,10 @@ h1, h2, h3
 #search_box select option
 {
     font-size: 0.9em;
+}
+#search_box select:focus
+{
+    outline: none;
 }
 
 #search_input input
@@ -96,7 +136,7 @@ h1, h2, h3
 .card
 {
     margin:2vh 0.5vw;
-    height:57vh;
+    height:55vh;
 }
 
 .card img
@@ -104,12 +144,17 @@ h1, h2, h3
     height:30vh;
 }
 
-.card-content span
+.card-content .card-title
 {
     display:block;
-    height:17vh;
+    height:12vh;
+    overflow:hidden;
 }
 
+.card-content footer
+{
+    margin-top: 4vh;
+}
 
 .poster i
 {
@@ -134,7 +179,7 @@ h1, h2, h3
 dl
 {
     display: flex;
-    font-size: 2em;
+    font-size: 1.6em;
     flex-direction: column;
     margin-bottom:10vh;
 }
@@ -151,15 +196,15 @@ dl div
 
 .about_right
 {
-    font-size: 2em;
-    margin:12vh 0vw;
+    font-size: 1.6em;
+    margin:5vh 0vw;
     text-align: center;
     /* border: solid; */
 }
 .about_right img
 {
     display:block;
-    width:15vw;
+    width:12vw;
     margin:4vh auto;
     border:solid;
     border-radius: 20px;
@@ -186,56 +231,68 @@ dl div
 @media screen and (max-width: 1400px) {
     .card img
     {
-    height:35vh;
+    height:30vh;
     }
     .card
     {
-      height: 70vh;
+      height: 55vh;
     }
-    .card-content span
+    .card-content .card-title
     {   
         display:block;
-        height:23vh;
+        height:10vh;
     }
-  }
-
-@media screen and (max-width: 1200px) {
-    .card img
+    .card-content footer
     {
-    height:35vh;
-    }
-    .card
-    {
-      height: 80vh;
-    }
-    .card-content span
-    {   
-        display:block;
-        height:33vh;
+        margin-top: 2vh;
     }
   }
 
 @media screen and (max-width: 1000px) {
+    nav a .cloud_icon
+    {
+        display: none;
+    }
+    nav .brand-logo
+    {
+        font-size: 1.3em;
+        font-weight: 600;
+    }
+    h1
+    {
+        font-size: 2.5em;
+    }
+    .card
+    {
+      height: 64vh;
+    }
     .card img
     {
     height:35vh;
     }
-    .card
-    {
-      height: 62vh;
-    }
-    .card-content span
+    .card-content .card-title
     {   
         display:block;
-        height:17vh;
+        height:15vh;
     }
-
+    .card-content footer
+    {
+        margin-top: 2vh;
+    }
     .about_right img
     {
         display:block;
-        width:30vw;
+        width:40vw;
         margin:4vh auto;
         border:solid;
         border-radius: 20px;
+    }
+    #search_button button
+    {
+        width:6vw;
+    }
+    .poster_card
+    {
+        margin-bottom:8vh;
     }
   }
