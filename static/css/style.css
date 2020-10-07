@@ -42,7 +42,7 @@
 h4
 {
     text-align: center;
-    font-size: 1.1em;
+    font-size: 2em;
 }
 
 h2
@@ -166,6 +166,11 @@ h1
     font-size: 1.4em;
 }
 
+.about_right h4
+{
+    font-size: 1.1em;
+}
+
 .about_main
 {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -252,11 +257,13 @@ dl div
     nav a .cloud_icon
     {
         display: none;
+        /* font-size: 0.9em; */
     }
     nav .brand-logo
     {
         font-size: 1.3em;
         font-weight: 600;
+        /* text-overflow: ellipsis; */
     }
     h1
     {
@@ -264,7 +271,7 @@ dl div
     }
     .card
     {
-      height: 64vh;
+      height: 63vh;
     }
     .card img
     {
@@ -273,17 +280,17 @@ dl div
     .card-content .card-title
     {   
         display:block;
-        height:15vh;
+        height:14vh;
     }
     .card-content footer
     {
-        margin-top: 2vh;
+        margin-top: 3vh;
     }
     .about_right img
     {
         display:block;
         width:40vw;
-        margin:4vh auto;
+        margin:0vh auto;
         border:solid;
         border-radius: 20px;
     }
@@ -294,5 +301,18 @@ dl div
     .poster_card
     {
         margin-bottom:8vh;
+    }
+
+    .about_left h2
+    {
+        font-size: 2em;
+    }
+    dl
+    {
+        font-size: 1.4em;
+    }
+    .about_right h4
+    {
+        font-size: 1em;
     }
   }
