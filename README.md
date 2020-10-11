@@ -1,6 +1,7 @@
 # Criagslist-Scrapper
 A Full-Stack Responsive Website that displays and allows to search for classified ads from criagslist.org with an attractive and user friendly UI.<br>
 Project URL: https://criagslist-scrapper.herokuapp.com/
+<br>
 Just Enter the desired term in search bar to see classified ads related to it.
 <br>
 #### A basic walkthrough of the project:
@@ -23,6 +24,7 @@ Just Enter the desired term in search bar to see classified ads related to it.
 <br><br>
 
 #### For Mobile/Smartphone Devices:
+<br>
 <table>
   <tr>
     <td valign="top"><img src="https://raw.githubusercontent.com/Lakshay-Dhingra/Criagslist-Scrapper/master/images/mobile_img1.jpg" width="250" /></td>
