@@ -128,6 +128,19 @@ h1
     /* border: solid; */
 }
 
+.search_suggestion div
+{
+    color:gray;
+    font-size: 18px;
+    width: calc(60% + 100px);
+    margin: auto;
+    margin-bottom: 70px;
+    margin-top: -60px;
+    /* border: solid; */
+}
+
+
+
 .card_container
 {
     margin:5vh auto;
