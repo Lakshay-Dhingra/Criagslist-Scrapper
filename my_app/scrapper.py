@@ -17,7 +17,6 @@ def searchResults(city, search):
                 if res.name == 'li':
                     di=dict()
                     di['link']=res.a.get('href')
-
                     data_ids=res.a.get('data-ids')
                     if data_ids == None:
                         di['image_url'] = "../static/images/Image_Not_Found.jpg"
@@ -26,8 +25,9 @@ def searchResults(city, search):
                         di['image_url']="https://images.craigslist.org/"+data_id+"_300x300.jpg"
 
                     di['date_time']=res.div.time.get('title')
-                    di['title']=res.div.h2.a.string
+                    di['title']=res.div.h3.a.string
                     result_list.append(di)
             return result_list
-    except Exception:
+    except Exception as e:
+        print(e)
         return None

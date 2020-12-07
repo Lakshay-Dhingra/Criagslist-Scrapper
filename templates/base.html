@@ -16,14 +16,14 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <!-- <link rel="stylesheet" href="../static/css/style.css"> -->
 
-    <title>Criagslist Scrapper</title>
+    <title>Craigslist Scrapper</title>
 </head>
 <body>
    <nav class="blue">
     <div class="container nav-wrapper">
         <a href="{% url 'home' %}" class="brand-logo">
         <i class="large material-icons cloud_icon">cloud</i>
-        Criagslist Scrapper</a>
+        Craigslist Scrapper</a>
 
         <a href="#" class="sidenav-trigger" data-target="mobile-nav">
 			<i class="material-icons">menu</i>
@@ -38,8 +38,8 @@
    <!-- For Mobile-->
     <ul class="sidenav" id="mobile-nav">
         <li class="blue mobile_brand_logo"><a href="{% url 'home' %}"><i class="small material-icons cloud_icon">cloud</i>
-            <span>Criagslist Scrapper</span></a>
-            <p>Criagslist Scrapper is a website that allows you to search for classified ads from criagslist.org.</p>
+            <span>Craigslist Scrapper</span></a>
+            <p>Craigslist Scrapper is a website that allows you to search for classified ads from craigslist.org.</p>
         </li>
 	    <li><a href="{% url 'home' %}">Home</a></li>
         <li><a href="{% url 'about' %}">About</a></li>
@@ -47,7 +47,7 @@
 
 
     <div class="container">
-    <h1>What do you want to search for on Criagslist Scrapper?</h1>
+    <h1>What do you want to search for on Craigslist Scrapper?</h1>
         <form action="{% url 'new_search' %}" method="get" id = "search_form">
         <div class="row container" id = "search_box">
 
